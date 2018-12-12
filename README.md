@@ -50,8 +50,8 @@ Events
 - DELETE /api/events/:id Delete an Event
 - Pickup_locations
 - GET /api/users/:id//:type Retrieve location
-- POST /api/users/:id/houses/:type Post location
-- PATCH /api/users/:id/houses/:type Update location
+- POST /api/users/:id/:type Post location
+- PATCH /api/users/:id/:type Update location
 - PATCH /api/users/ users checked in?
 - POST/api/buses add bus capacity to event
 Buses
