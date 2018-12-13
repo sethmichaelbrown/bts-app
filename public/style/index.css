@@ -1,0 +1,143 @@
+@media (max-width: 1500px) {
+  body{
+    background-color: #ff420f;
+  }
+  .content-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: url('/images/bts-future-selves-background-image.png') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .layer {
+    background: rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .navbar {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  a.brand-logo {
+    padding-top: 0.5%;
+    padding-left: 2%;
+  }
+
+  .logo {
+    height: 8vh;
+    width: 10vw;
+    margin-top: 11%;
+  }
+
+  .nav-links{
+    margin-top: 1%;
+    margin-right: 3%;
+  }
+
+  .nav-link:hover{
+    background: #ffffff;
+    color: #ff420f;
+  }
+
+  .modal{
+    background-color: #f9f9f9;
+  }
+
+  .modal-logo{
+    margin-bottom: 5vh;
+  }
+
+  .main-header{
+    margin-top: 40vh;
+  }
+
+  .modal-trigger{
+    background-color: #ffffff;
+    color: #ff420f;
+    margin-bottom: 1%;
+  }
+
+  .modal-trigger:hover{
+    background-color: #ff420f;
+    color: #ffffff;
+  }
+
+  .modal-link:hover{
+    background-color: #ff420f;
+    color: #ffffff;
+  }
+
+  .ride-btn{
+    margin-top: 0vh;
+    background-color: #ffffff;
+    color: #000000;
+    height: 15vh;
+  }
+
+  .ride-btn:hover{
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .chevron {
+    margin-top:vh;
+  }
+
+  .chevron-down {
+    fill: #FFF;
+    margin: auto;
+    width: 2.5em;
+    height: 2.5em;
+    animation: hover-me .5s infinite ease-in-out alternate;
+  }
+
+  .calendar-section{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  @keyframes hover-me {
+    100% {
+      transform: translate3d(0, 25px, 0);
+    }
+  }
+
+  .event-header{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 2%;
+  }
+
+
+  @media (max-width: 576px) {
+    .content-wrapper{
+      height: 100vh;
+      width: 100vw;
+      background: url('/images/bts-future-selves-background-image.png') no-repeat top center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .main-header > h1{
+      font-size: 40px;
+    }
+
+    .logo {
+      height: 7vh;
+      width: 25vw;
+    }
+
+    .layer{
+      background-color: rgba(0, 0, 0, 0)
+    }
+
+    .event-header{
+      margin-top: 10vh;
+    }
+  }

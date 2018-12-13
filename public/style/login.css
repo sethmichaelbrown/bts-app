@@ -1,0 +1,133 @@
+/* Desktop */
+@media (max-width: 1500px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #f9f8f8;
+  }
+
+  .main-image {
+    background-image: url('/images/bts-future-selves-background-image.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60vw;
+  }
+
+  .logo-container {
+    height: 25vh;
+    width: 20vw;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+
+  .brand-logo {
+    background-image: url('/logos/BTS_LOGO-gray-with-transparent-background-hi-res copy.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    margin-top: 20%;
+  }
+
+  .login {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+    width: 40vw;
+  }
+
+  .login-field {
+    margin-top: 10%;
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  .user-pass-inputs{
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .forgot {
+    margin-top: 3%;
+  }
+
+  .forgot-user {
+    margin-left: 20%;
+  }
+
+  .forgot-pass {
+    margin-left: 10%;
+  }
+
+  .new-user{
+    grid-column: 1/4;
+    grid-row: 3/4;
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  .btn{
+    margin-top: 5%;
+    background-color: #ff420f;
+    color: #ffffff;
+  }
+
+  .btn:hover{
+    background-color: #ffffff;
+    color: #ff420f;
+  }
+
+  .login-btn{
+    width: 30vw;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/images/bts-future-selves-background-image.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-image {
+    display: none;
+  }
+
+  .brand-logo {
+    background-image: url('/logos/BTS_LOGO-white-no-background-hi-res (1).png');
+  }
+
+  .login{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .logo-container {
+    height: 25vh;
+    width: 50vw;
+  }
+
+  .forgot-user {
+    margin-left: 15%;
+  }
+
+  .user-pass-inputs{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  a, h2{
+    color: #ffffff
+  }
+
+  .login-btn{
+    width: 75vw;
+  }
+}

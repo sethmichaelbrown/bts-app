@@ -1,0 +1,90 @@
+@media (max-width: 1500px) {
+  .splash {
+    height: 100vh;
+    width: 100vw;
+    background: url('/images/bts-future-selves-background-image.png') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-row: repeat(3, 1fr);
+  }
+
+  .navbar {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-brand {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-link:hover {
+    color: #ff420f;
+    background-color: white;
+  }
+
+  .logo {
+    height: 8vh;
+    width: 10vw;
+    padding-right: 5%;
+  }
+
+  .btn {
+    color: white;
+    background-color: #ff420f;
+  }
+
+  .btn:hover {
+    color: #ff420f;
+    background-color: white;
+  }
+
+  .login-btn-nav {
+    padding-left: 0.5%;
+  }
+
+  .header-container {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    height: 25vh;
+  }
+
+  .chevron {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin-top: 5%;
+    margin: auto;
+  }
+
+  .chevron-down {
+    fill: #FFF;
+    margin: auto;
+    width: 2.5em;
+    height: 2.5em;
+    animation: hover-me .5s infinite ease-in-out alternate;
+  }
+
+  @keyframes hover-me {
+    100% {
+      transform: translate3d(0, 25px, 0);
+    }
+  }
+
+  .section{
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 576px){
+}
