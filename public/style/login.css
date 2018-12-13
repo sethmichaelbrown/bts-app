@@ -22,7 +22,7 @@
   }
 
   .brand-logo {
-    background-image: url('/logos/BTS_LOGO-orange-with-transparent-background-hi-res.png');
+    background-image: url('/logos/BTS_LOGO-gray-with-transparent-background-hi-res copy.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -69,15 +69,19 @@
     text-align: center;
   }
 
-  .new-user-btn{
+  .btn{
     margin-top: 5%;
     background-color: #ff420f;
     color: #ffffff;
   }
 
-  .new-user-btn:hover{
+  .btn:hover{
     background-color: #ffffff;
     color: #ff420f;
+  }
+
+  .login-btn{
+    width: 30vw;
   }
 }
 
@@ -121,5 +125,9 @@
 
   a, h2{
     color: #ffffff
+  }
+
+  .login-btn{
+    width: 75vw;
   }
 }
