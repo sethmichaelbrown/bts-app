@@ -15,7 +15,7 @@
   body {
     height: 100vh;
     width: 100vw;
-    background-color: grey;
+    background-color: #D3D3D3;
   }
 
   .main-image {
@@ -73,12 +73,12 @@
   }
 
   .new-user-btn{
-    background-color: orange;
-    color: white;
+    background-color: #ff420f;
+    color: #ffffff;
   }
 
   .new-user-btn:hover{
-    background-color: white;
-    color: orange;
+    background-color: #ffffff;
+    color: #ff420f;
   }
 }

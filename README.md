@@ -12,7 +12,9 @@
 ```
 /* RGB */
 $color1: rgba(255, 66, 15, 1); // main
+        #ff420f
 $color2: rgba(255, 255, 255, 1); // accent
+        #ffffff
 $color3: rgba(0, 0, 0, 1); // accent2
 ```
 
