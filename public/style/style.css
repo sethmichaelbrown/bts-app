@@ -1,21 +1,9 @@
-/* Mobile */
-@media (max-width: 576px) {
-  body {
-    height: 100vh;
-    width: 100vw;
-  }
-
-  .main-image {
-    display: none;
-  }
-}
-
 /* Desktop */
 @media (max-width: 1280px) {
   body {
     height: 100vh;
     width: 100vw;
-    background-color: #D3D3D3;
+    background-color: #f9f8f8;
   }
 
   .main-image {
@@ -28,8 +16,9 @@
 
   .logo-container {
     height: 25vh;
-    width: 40vw;
-    grid-area: 1/1/2/4;
+    width: 20vw;
+    grid-row: 1/2;
+    grid-column: 2/3;
   }
 
   .brand-logo {
@@ -39,7 +28,7 @@
     background-size: contain;
     height: 100%;
     width: 100%;
-    margin: auto;
+    margin-top: 20%;
   }
 
   .login {
@@ -51,8 +40,14 @@
   }
 
   .login-field {
-    grid-area: 1/1/4/4;
-    margin-top: 20%;
+    margin-top: 10%;
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  .user-pass-inputs{
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .forgot {
@@ -68,11 +63,14 @@
   }
 
   .new-user{
+    grid-column: 1/4;
+    grid-row: 3/4;
     margin-top: 10%;
     text-align: center;
   }
 
   .new-user-btn{
+    margin-top: 5%;
     background-color: #ff420f;
     color: #ffffff;
   }
@@ -80,5 +78,48 @@
   .new-user-btn:hover{
     background-color: #ffffff;
     color: #ff420f;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/images/bts-future-selves-background-image.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .main-image {
+    display: none;
+  }
+
+  .brand-logo {
+    background-image: url('/logos/BTS_LOGO-white-no-background-hi-res (1).png');
+  }
+
+  .login{
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .logo-container {
+    height: 25vh;
+    width: 50vw;
+  }
+
+  .forgot-user {
+    margin-left: 15%;
+  }
+
+  .user-pass-inputs{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  a, h2{
+    color: #ffffff
   }
 }

@@ -1,5 +1,6 @@
 h2{
-  font-family: 'Source Code Pro';
+font-family: 'Source Code Pro', monospace;
+  word-spacing: normal;
 }
 
 a{
