@@ -43,8 +43,32 @@
     color: #ff420f;
   }
 
+  .modal{
+    background-color: #f9f9f9;
+  }
+
+  .modal-logo{
+    margin-bottom: 5vh;
+  }
+
   .main-header{
     margin-top: 40vh;
+  }
+
+  .modal-trigger{
+    background-color: #ffffff;
+    color: #ff420f;
+    margin-bottom: 1%;
+  }
+
+  .modal-trigger:hover{
+    background-color: #ff420f;
+    color: #ffffff;
+  }
+
+  .modal-link:hover{
+    background-color: #ff420f;
+    color: #ffffff;
   }
 
   .ride-btn{

@@ -15,5 +15,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
   })
 // End Homepage Button
 
+// Sign Up Modal
+  const signUp = document.querySelector('#sign-up')
+  const  = document.querySelector('#password')
+  const  = document.querySelector('#username')
+
+
 
 }) // DOMContentLoaded;
