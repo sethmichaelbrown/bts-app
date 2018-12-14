@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 // Sign Up Modal
   const signUp = document.querySelector('#sign-up')
-  const  = document.querySelector('#password')
-  const  = document.querySelector('#username')
+  const passField = document.querySelector('#password')
+  const userField = document.querySelector('#username')
 
 
 
