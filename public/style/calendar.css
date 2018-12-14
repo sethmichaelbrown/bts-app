@@ -78,6 +78,16 @@
 }
 
 @media (max-width: 580px){
+  .content-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: url('/images/bts-future-selves-background-image.png') no-repeat top center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
   .container{
     width: 100vw;
   }
