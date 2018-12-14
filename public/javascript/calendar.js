@@ -2,380 +2,380 @@ document.addEventListener('DOMContentLoaded', function(event) {
   console.log("It's Alive - Cal")
   M.AutoInit();
   let eventsArr = [{
-    date: 'today',
-    dayOfWeek: 'Friday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'The The',
     venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }, {
-    date: 'tomorrow',
-    dayOfWeek: 'Saturday',
+    date: '12/18/18',
+    dayOfWeek: 'Sat',
     headliner: 'Bandz',
-    venue: 'Ogden'
+    venue: 'Red Rocks'
   }]
 
   const body = document.querySelector('body')
@@ -391,11 +391,11 @@ document.addEventListener('DOMContentLoaded', function(event) {
       let buttonDiv = document.createElement('div')
       let button = document.createElement('a')
 
-      dateDiv.setAttribute('class', 'col l2 row-element valign-wrapper')
-      dayDiv.setAttribute('class', 'col l2 row-element valign-wrapper')
-      headlineDiv.setAttribute('class', 'col l3 row-element valign-wrapper')
-      venueDiv.setAttribute('class', 'col l3 row-element valign-wrapper')
-      buttonDiv.setAttribute('class', 'col l2 row-element valign-wrapper row-element-last')
+      dateDiv.setAttribute('class', 'col l2 s2 row-element valign-wrapper')
+      dayDiv.setAttribute('class', 'col l2 s2 row-element valign-wrapper')
+      headlineDiv.setAttribute('class', 'col l3 s3 row-element valign-wrapper')
+      venueDiv.setAttribute('class', 'col l3 s3 row-element valign-wrapper')
+      buttonDiv.setAttribute('class', 'col l2 s2 row-element valign-wrapper row-element-last')
       button.setAttribute('class', 'waves-effect waves-light btn event-btn z-depth-0 center valign-wrapper modal-trigger')
       button.setAttribute('data-target', 'modal3')
 
@@ -404,7 +404,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       dayDiv.innerText = `${event.dayOfWeek}`
       headlineDiv.innerText = `${event.headliner}`
       venueDiv.innerText = `${event.venue}`
-      button.innerText = 'Reserve Seat'
+      button.innerText = 'Book'
 
 
       events.appendChild(dateDiv)
