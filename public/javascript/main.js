@@ -3,11 +3,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
   M.AutoInit();
 
 
-  const login = document.querySelector('.login-button')
-
-  login.addEventListener('click', (event) => {
-    console.log('button clicked')
-  })
 
 
 }) // DOMContentLoaded;
