@@ -57,43 +57,21 @@
     margin-top: 0vh;
   }
 
-  .oauth-logo{
-    float: left;
-    margin-top: 5px;
-    margin-right: 5px;
-    height: 40px;
-    width: 40px;
-  }
-
-  .oauth-button{
-    background-color: rgba(0, 0, 0, 0);
-    color: #000000;
-    border: solid;
-    border-width: thin;
-    border-radius: 10px;
-    line-height: 25px;
-    margin-bottom: 5vh;
-    height: auto;
-  }
-
-  .oauth-button:hover{
-    background: #ff420f;
-    color: #ffffff;
-  }
-
-  .g-oauth-logo{
-    margin-top: 5px;
-  }
-
   .main-header {
     margin-top: 40vh;
+    z-index: 0;
   }
 
-  .modal-trigger, .modal-link{
+  .modal-trigger, .modal-link, .signup-link{
     background-color: rgba(0,0,0,0);
     border: solid;
     border-width: thin;
     margin-bottom: 1%
+  }
+
+  .signup-link:hover {
+    background-color: #ffffff;
+    color: #ff420f;
   }
 
   .modal-trigger:hover {

@@ -382,6 +382,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   const calendar = document.querySelector('.calendar-section')
   const events = document.querySelector('#events-row')
 
+
   const createRow = () => {
     eventsArr.forEach(event => {
       let dateDiv = document.createElement('div')
@@ -405,6 +406,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
       headlineDiv.innerText = `${event.headliner}`
       venueDiv.innerText = `${event.venue}`
       button.innerText = 'Book'
+      button.value = {
+        date: `${event.date}`,
+        day: `${event.dayOfWeek}`,
+        headliner: `${event.headliner}`,
+        venue: `${event.venue}`
+      }
 
 
       events.appendChild(dateDiv)
@@ -419,11 +426,18 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   createRow()
 
-  const rowHeader = document.querySelector('.row-header')
+  const getInfo = () => {
+    const book = document.getElementsByClassName('event-btn')
 
-  const sortRows = (event) => {
-    console.log(event)
+    for(let i = 0; i < book.length; i++){
+      console.log(book[i])
+    }
   }
+
+
+  // book.addEventListener('click', () => {
+  //   console.log(event.name)
+  // })
 
 
 
