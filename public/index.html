@@ -94,62 +94,67 @@
             <form class="col s12">
               <div class="row center">
 
+                <div class="row oauth-buttons">
+                  <div class="oauth-button btn darken-4 col l4 s12 z-depth-0 offset-l1">
+                    <a href="/users/google-oauth/">
+                      <div class="left">
+                        <img class="g-oauth-logo" width="25px" alt="Google-Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+                      </div>
+                      Login with Google
+                    </a>
+                  </div>
+
+                  <div class="oauth-button btn darken-4 col l4 s12 z-depth-0 center">
+                    <a href="/users/google-oauth/">
+                      <div class="left">
+                        <img class="g-oauth-logo" width="25px" alt="Google-Logo" src="/logos/f-ogo_RGB_HEX-100.png" />
+                      </div>
+                      Login with Facebook
+                    </a>
+                  </div>
+                </div>
+
                 <div id="new-first-name" class="input-field col l6 s12">
                   <i class="material-icons prefix">face</i>
-                  <input id="icon_prefix-1" type="text" class="validate" required>
+                  <input id="icon_prefix-1" type="text" class="validate" required pattern=".{3,}">
                   <label for="icon_prefix-1">First Name</label>
+                  <span class="helper-text" data-error="Min. 3 character"></span>
                 </div>
 
 
                 <div id="new-last-name" class="input-field col l6 s12">
                   <i class="material-icons prefix">face</i>
-                  <input id="icon_prefix-2" type="text" class="validate" required>
+                  <input id="icon_prefix-2" type="text" class="validate" required pattern=".{3,}">
                   <label for="icon_prefix-2">Last Name</label>
+                  <span class="helper-text" data-error="Min. 3 character"></span>
                 </div>
 
-                <div id="new-username" class="input-field col l6 s12">
+                <div id="new-username" class="input-field col l12 s12">
                   <i class="material-icons prefix">send</i>
                   <input id="icon_prefix-3" type="email" class="validate" required>
                   <label for="icon_prefix-3">Email</label>
+                  <span class="helper-text" data-error="Enter valid email"></span>
                 </div>
 
-                <div id="new-username" class="input-field col l6 s12">
+                <div id="new-username" class="input-field col l12 s12">
                   <i class="material-icons prefix">account_circle</i>
-                  <input id="icon_prefix-4" type="text" class="validate" required>
+                  <input id="icon_prefix-4" type="text" class="validate" required pattern=".{3,}" title="3 characters minimum">
                   <label for="icon_prefix-4">New Username</label>
+                  <span class="helper-text" data-error="Min. 3 character">
                 </div>
 
-                <div id="new-username" class="input-field col s12">
+                <div id="new-password" class="input-field col l6 s12">
                   <i class="material-icons prefix">vpn_key</i>
                   <input id="icon_prefix-5" type="password" class="validate" required>
                   <label for="icon_prefix-5">Password</label>
                 </div>
 
-                <div id="new-password-1" class="input-field col s12">
+                <div id="new-password-confirm" class="input-field col l6 s12">
                   <i class="material-icons prefix">vpn_key</i>
-                  <input id="icon_prefix-6" type="password" class="validate" required>
-                  <label for="icon_prefix-6">Re-enter Password</label>
+                  <input id="icon_prefix-6" type="password" class="" required onkeyup='check()'>
+                  <label for="icon_prefix-6">Confirm Password</label>
+                  <span id="password-confirm" class="helper-text" data-error="Password not match" data-success="Password Match"></span>
                 </div>
-
-              <div class="row oauth-buttons">
-                <div class="oauth-button btn white darken-4 col l5 s12 z-depth-0 center">
-                  <a href="/users/google-oauth/">
-                    <div class="left">
-                      <img class="g-oauth-logo" width="25px" alt="Google-Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
-                    </div>
-                    Login with Google
-                  </a>
-                </div>
-
-                <div class="oauth-button btn white darken-4 col l5 s12 z-depth-0 center">
-                  <a href="/users/google-oauth/">
-                    <div class="left">
-                      <img class="g-oauth-logo" width="25px" alt="Google-Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"/>
-                    </div>
-                    Login with Facebook
-                  </a>
-                </div>
-              </div>
 
               </div>
             </form>
@@ -203,6 +208,8 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script type="text/javascript" src="javascript/index.js"></script>
+  <script type="text/javascript" src="javascript/password.js"></script>
+  <script type="text/javascript" src="validator.min.js"></script>
 </body>
 
 </html>

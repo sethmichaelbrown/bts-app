@@ -52,7 +52,12 @@
   }
 
   .oauth-button{
+    background: #ffffff;
     margin: 5vw;
+  }
+
+  .oauth-button:hover{
+    background: #ff420f;
   }
 
   .g-oauth-logo{
@@ -78,8 +83,7 @@
     padding: 0px;
   }
   #modal2{
-    width: 100vw;
-    max-height: 100vh;
+    width: 75vw;
   }
 
   .modal-link:hover {
