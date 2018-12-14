@@ -78,6 +78,10 @@
 }
 
 @media (max-width: 580px){
+  .container{
+    width: 100vw;
+  }
+
   .row-header{
     font-size: 12px;
   }
@@ -91,4 +95,10 @@
     padding: 5%;
   }
 
+  .event-header{
+    margin-top: 20%;
+  }
+  .date-div{
+    text-align: center
+  }
 }

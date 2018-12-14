@@ -391,7 +391,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
       let buttonDiv = document.createElement('div')
       let button = document.createElement('a')
 
-      dateDiv.setAttribute('class', 'col l2 s2 row-element valign-wrapper')
+      dateDiv.setAttribute('class', 'col l2 s2 row-element valign-wrapper date-div')
       dayDiv.setAttribute('class', 'col l2 s2 row-element valign-wrapper')
       headlineDiv.setAttribute('class', 'col l3 s3 row-element valign-wrapper')
       venueDiv.setAttribute('class', 'col l3 s3 row-element valign-wrapper')
