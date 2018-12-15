@@ -502,15 +502,28 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
       let row = document.createElement('div')
       let pickupOption = document.createElement('div')
+      let quantityField = document.createElement('div')
+      let quantitySelect = document.createElement('input')
+      let option1 = document.createElement('option')
+
 
       row.setAttribute('class', 'row')
-      pickupOption.setAttribute('class', 'pickupOpt col s12 l12')
+      pickupOption.setAttribute('class', 'pickupOpt col s10 l11 float-left')
+      quantityField.setAttribute('class', 'col s2 l1 float-left validate')
+      quantitySelect.setAttribute('class', 'validate ticket-quantity')
+      quantitySelect.setAttribute('type', 'number')
+
 
       pickupOption.innerText = `${service} | ${time} ${location} to ${headliner} at ${venue} ${rTrip} \n ${price} + ${fee} FEE \n ${saleEnd}`
 
 
       modalTitle.appendChild(row)
       row.appendChild(pickupOption)
+      row.appendChild(quantityField)
+      quantityField.appendChild(quantitySelect)
+      quantitySelect.appendChild(option1)
+
+
 
     })
 
@@ -527,7 +540,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
   const bookBtn = document.querySelector('.book-btn')
 
   bookBtn.addEventListener('click', (event) => {
-    console.log('Book button clicked from modal')
+    const ticketQuantity = document.querySelector('.ticket-quantity')
+    console.log(ticketQuantity.value)
     bookBtn.setAttribute('class', 'modal-close')
   })
 
