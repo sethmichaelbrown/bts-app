@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(event) {
-  console.log("It's Alive - Cal")
+  console.log("It's Alive")
   M.AutoInit();
+
   let eventsArr = [{
     date: '12/18/18',
     dayOfWeek: 'Sat',
@@ -378,12 +379,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
     venue: 'Red Rocks'
   }]
 
+  // Creating Table/ Blocks
   const body = document.querySelector('body')
   const calendar = document.querySelector('.calendar-section')
   const events = document.querySelector('#events-row')
 
 
-  const createRow = () => {
+  const createRows = () => {
     eventsArr.forEach(event => {
       let dateDiv = document.createElement('div')
       let dayDiv = document.createElement('div')
@@ -424,20 +426,29 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   }
 
-  createRow()
+  createRows()
 
-  const getInfo = () => {
-    const book = document.getElementsByClassName('event-btn')
+  // Sort Function
+  calendar.addEventListener('click', (event) => {
+    let target = event.target.id
 
-    for(let i = 0; i < book.length; i++){
-      console.log(book[i])
+    if(target.innerText === 'Day'){
+      removeRows()
+      // eventsArr.sort((a,b) => {
+      //   return new Date(b.date) - new Date(a.date)
+      //   createRows()
+      }
+    else if(target.innerText === 'dayOfWeek'){
+      console.log('Day')
     }
-  }
+    else if(target.innerText === 'Headliner'){
+      console.log('Headliner')
+    }
+    else if(target.innerText === 'Venue'){
+      console.log('Venue')
+    }
+  })
 
-
-  // book.addEventListener('click', () => {
-  //   console.log(event.name)
-  // })
 
 
 
