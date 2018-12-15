@@ -87,7 +87,7 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  
+
   .container{
     width: 100vw;
   }
@@ -98,6 +98,7 @@
 
   .row-element{
     font-size: 12px;
+    overflow: hidden;
   }
 
   .event-btn{

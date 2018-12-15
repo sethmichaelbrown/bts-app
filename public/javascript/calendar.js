@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(event) {
-  console.log("It's Alive - Cal")
+  console.log("It's Alive")
   M.AutoInit();
+
   let eventsArr = [{
     date: '12/18/18',
     dayOfWeek: 'Sat',
@@ -378,11 +379,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
     venue: 'Red Rocks'
   }]
 
+  // Creating Table/ Blocks
   const body = document.querySelector('body')
   const calendar = document.querySelector('.calendar-section')
   const events = document.querySelector('#events-row')
 
-  const createRow = () => {
+
+  const createRows = () => {
     eventsArr.forEach(event => {
       let dateDiv = document.createElement('div')
       let dayDiv = document.createElement('div')
@@ -405,6 +408,12 @@ document.addEventListener('DOMContentLoaded', function(event) {
       headlineDiv.innerText = `${event.headliner}`
       venueDiv.innerText = `${event.venue}`
       button.innerText = 'Book'
+      button.value = {
+        date: `${event.date}`,
+        day: `${event.dayOfWeek}`,
+        headliner: `${event.headliner}`,
+        venue: `${event.venue}`
+      }
 
 
       events.appendChild(dateDiv)
@@ -417,13 +426,29 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   }
 
-  createRow()
+  createRows()
 
-  const rowHeader = document.querySelector('.row-header')
+  // Sort Function
+  calendar.addEventListener('click', (event) => {
+    let target = event.target.id
 
-  const sortRows = (event) => {
-    console.log(event)
-  }
+    if(target.innerText === 'Day'){
+      removeRows()
+      // eventsArr.sort((a,b) => {
+      //   return new Date(b.date) - new Date(a.date)
+      //   createRows()
+      }
+    else if(target.innerText === 'dayOfWeek'){
+      console.log('Day')
+    }
+    else if(target.innerText === 'Headliner'){
+      console.log('Headliner')
+    }
+    else if(target.innerText === 'Venue'){
+      console.log('Venue')
+    }
+  })
+
 
 
 
