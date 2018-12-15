@@ -83,6 +83,10 @@
   .pickupOpt:first-of-type {
     margin-top: 3vh;
   }
+
+  .float{
+    float: left;
+  }
 }
 
 @media (max-width: 580px){
