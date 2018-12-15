@@ -1,4 +1,4 @@
-@media (max-width: 1500px) {
+@media (max-width: 15000px) {
   .calendar-section {
     min-height: 200vh;
     max-height: auto;
@@ -74,6 +74,14 @@
   .event-btn:hover {
     background-color: #ff420f;
     color: #ffffff;
+  }
+
+  .pickupOpt {
+    font-size: 15px;
+  }
+
+  .pickupOpt:first-of-type {
+    margin-top: 3vh;
   }
 }
 
