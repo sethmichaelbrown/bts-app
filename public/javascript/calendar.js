@@ -432,16 +432,22 @@ document.addEventListener('DOMContentLoaded', function(event) {
   const bookModal = document.querySelector('#modal3-content')
 
   calendar.addEventListener('click', (event) => {
+    // Removes old data in modal
+    while (bookModal.hasChildNodes()) {
+      bookModal.removeChild(bookModal.lastChild);
+    }
+
     let eventInfo = event.target.value
     let headliner = eventInfo.headliner
     let date = eventInfo.date
     let venue = eventInfo.venue
     let day = eventInfo.day
-    let modalTitle = document.createElement('h5')
 
-    while (bookModal.hasChildNodes()) {
-      bookModal.removeChild(bookModal.lastChild);
-    }
+    const modalTitle = document.createElement('h5')
+    const modalBody = document.createElement('div')
+
+
+
 
     modalTitle.innerText = `${headliner} - ${day} (${date}) at ${venue}`
 
