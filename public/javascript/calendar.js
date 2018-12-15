@@ -428,26 +428,42 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   createRows()
 
-  // Sort Function
-  calendar.addEventListener('click', (event) => {
-    let target = event.target.id
+  // Book Function
+  const bookModal = document.querySelector('#modal3-content')
 
-    if(target.innerText === 'Day'){
-      removeRows()
-      // eventsArr.sort((a,b) => {
-      //   return new Date(b.date) - new Date(a.date)
-      //   createRows()
-      }
-    else if(target.innerText === 'dayOfWeek'){
-      console.log('Day')
+  calendar.addEventListener('click', (event) => {
+    let eventInfo = event.target.value
+    let headliner = eventInfo.headliner
+    let date = eventInfo.date
+    let venue = eventInfo.venue
+    let day = eventInfo.day
+    let modalTitle = document.createElement('h5')
+
+    while (bookModal.hasChildNodes()) {
+      bookModal.removeChild(bookModal.lastChild);
     }
-    else if(target.innerText === 'Headliner'){
-      console.log('Headliner')
-    }
-    else if(target.innerText === 'Venue'){
-      console.log('Venue')
-    }
+
+    modalTitle.innerText = `${headliner} - ${day} (${date}) at ${venue}`
+
+    bookModal.appendChild(modalTitle)
+
+
   })
+
+
+
+
+
+
+  // Book Button
+  const bookBtn = document.querySelector('.book-btn')
+
+  bookBtn.addEventListener('click', (event) => {
+    console.log('Book button clicked from modal')
+    bookBtn.setAttribute('class', 'modal-close')
+  })
+
+  // Sort (Stretch)
 
 
 
