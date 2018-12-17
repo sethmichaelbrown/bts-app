@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="google-signin-client_id" content=process.env.GOOGLE_TOKEN>
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="style/fonts.css">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/calendar.css">
+  <link rel="stylesheet" href="style/payment.css">
+  <!--[if lt IE 9]>
+    <script src="[PATH]/html5shiv.js"></script>
+    <![endif]-->
+
+  <title>Bus to Show</title>
+</head>
+
+
+<body>
+  <div class="content-wrapper">
+    <div class="layer">
+
+      <!-- Nav -->
+      <div class="navbar-fixed">
+        <nav class="z-depth-0 navbar">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo center">
+              <img src="/logos/BTS_LOGO-white-no-background-hi-res (1).png" alt="bts-logo" class="logo">
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down nav-links">
+              <li><a class="nav-link" href="index.html#calendar">CALENDAR</a></li>
+              <li><a class="nav-link" href="charters.html">CHARTERS</a></li>
+              <li><a class="nav-link" href="about.html">ABOUT</a></li>
+              <button data-target="modal1" class="login-btn btn modal-trigger">LOGIN</button>
+              <button data-target="modal2" class="signup-btn btn modal-trigger">SIGN UP</button>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <ul class="sidenav" id="mobile-demo">
+        <br>
+        <a href="index.html" class="brand-logo center">
+          <img src="/logos/BTS_LOGO-gray-with-transparent-background-hi-res copy.png" alt="bts-logo" class="logo">
+        </a>
+        <br>
+        <div class="divider"></div>
+        <br>
+        <li><a class="sidenav-close sidenav-link" href="#calendar">CALENDAR</a></li>
+        <li><a class="sidenav-close sidenav-link" href="charters.html">CHARTERS</a></li>
+        <li><a class="sidenav-close sidenav-link" href="about.html">ABOUT</a></li>
+        <div class="divider"></div>
+        <li><a class="sidenav-close sidenav-link modal-trigger" data-target="modal1">LOGIN</a></li>
+        <li><a class="sidenav-close sidenav-link signup-link" href="signup.html">SIGN UP</a></li>
+      </ul>
+
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal login modal-fixed-footer">
+        <div class="modal-content center">
+          <img src="/logos/BTS_LOGO-gray-with-transparent-background-hi-res copy.png" alt="bts-logo" class="logo modal-logo">
+
+          <div class="row center">
+
+            <div class="row container g-oauth">
+              <div class="col l6 s12">
+                <!-- Google OAuth -->
+                <!-- <script>
+                  var GoogleAuth;
+                  var SCOPE = 'https://www.googleapis.com/auth/drive.metadata.readonly';
+                  function handleClientLoad() {
+                    // Load the API's client and auth2 modules.
+                    // Call the initClient function after the modules load.
+                    gapi.load('client:auth2', initClient);
+                  }
+
+                  function initClient() {
+                    // Retrieve the discovery document for version 3 of Google Drive API.
+                    // In practice, your app can retrieve one or more discovery documents.
+                    var discoveryUrl = 'https://www.googleapis.com/discovery/v1/apis/drive/v3/rest';
+
+                    // Initialize the gapi.client object, which app uses to make API requests.
+                    // Get API key and client ID from API Console.
+                    // 'scope' field specifies space-delimited list of access scopes.
+                    gapi.client.init({
+                        'apiKey': process.env.G_OAUTH,
+                        'discoveryDocs': [discoveryUrl],
+                        'clientId': process.env.G_CLIENT_ID,
+                        'scope': SCOPE
+                    }).then(function () {
+                      GoogleAuth = gapi.auth2.getAuthInstance();
+
+                      // Listen for sign-in state changes.
+                      GoogleAuth.isSignedIn.listen(updateSigninStatus);
+
+                      // Handle initial sign-in state. (Determine if user is already signed in.)
+                      var user = GoogleAuth.currentUser.get();
+                      setSigninStatus();
+
+                      // Call handleAuthClick function when user clicks on
+                      //      "Sign In/Authorize" button.
+                      $('#sign-in-or-out-button').click(function() {
+                        handleAuthClick();
+                      });
+                      $('#revoke-access-button').click(function() {
+                        revokeAccess();
+                      });
+                    });
+                  }
+
+                  function handleAuthClick() {
+                    if (GoogleAuth.isSignedIn.get()) {
+                      // User is authorized and has clicked 'Sign out' button.
+                      GoogleAuth.signOut();
+                    } else {
+                      // User is not signed in. Start Google auth flow.
+                      GoogleAuth.signIn();
+                    }
+                  }
+
+                  function revokeAccess() {
+                    GoogleAuth.disconnect();
+                  }
+
+                  function setSigninStatus(isSignedIn) {
+                    var user = GoogleAuth.currentUser.get();
+                    var isAuthorized = user.hasGrantedScopes(SCOPE);
+                    if (isAuthorized) {
+                      $('#sign-in-or-out-button').html('Sign out');
+                      $('#revoke-access-button').css('display', 'inline-block');
+                      $('#auth-status').html('You are currently signed in and have granted ' +
+                          'access to this app.');
+                    } else {
+                      $('#sign-in-or-out-button').html('Sign In/Authorize');
+                      $('#revoke-access-button').css('display', 'none');
+                      $('#auth-status').html('You have not authorized this app or you are ' +
+                          'signed out.');
+                    }
+                  }
+
+                  function updateSigninStatus(isSignedIn) {
+                    setSigninStatus();
+                  }
+                </script> -->
+
+                <button id="sign-in-or-out-button" style="margin-left: 25px">Sign In/Authorize</button>
+                <button id="revoke-access-button" style="display: none; margin-left: 25px">Revoke access</button>
+
+                <div id="auth-status" style="display: inline; padding-left: 25px"></div>
+                <hr>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <!-- <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+                </script> -->
+              </div>
+
+            </div>
+
+            <div class="row container">
+              <form class="col s12">
+                <div class="row center">
+                  <div id="username" class="input-field col s12">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix1" type="text" class="validate" required>
+                    <label for="icon_prefix1">Username</label>
+                  </div>
+                  <div id="password" class="input-field col s12">
+                    <i class="material-icons prefix">vpn_key</i>
+                    <input id="icon_password" type="password" class="validate" required>
+                    <label for="icon_password">Password</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <a id="sign-up" class="modal-close waves-effect btn-flat modal-link modal-trigger" data-target="modal2">Sign Up</a>
+          <a href="#!" class="waves-effect btn-flat modal-link">Login</a>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div id="modal2" class="modal signup modal-fixed-footer">
+        <div class="modal-content center">
+          <img src="/logos/BTS_LOGO-gray-with-transparent-background-hi-res copy.png" alt="bts-logo" class="logo modal-logo">
+          <div class="row container">
+            <form class="col s12">
+              <div class="row center">
+
+                <!-- Signup Fields -->
+                <div id="new-first-name" class="input-field col l6 s12">
+                  <i class="material-icons prefix">face</i>
+                  <input id="icon_prefix-1" type="text" class="validate" required pattern=".{3,}">
+                  <label for="icon_prefix-1">First Name</label>
+                  <span class="helper-text" data-error="Min. 3 character"></span>
+                </div>
+
+
+
+                <div id="new-last-name" class="input-field col l6 s12">
+                  <i class="material-icons prefix">face</i>
+                  <input id="icon_prefix-2" type="text" class="validate" required pattern=".{3,}">
+                  <label for="icon_prefix-2">Last Name</label>
+                  <span class="helper-text" data-error="Min. 3 character"></span>
+                </div>
+
+                <div id="new-username" class="input-field col l12 s12">
+                  <i class="material-icons prefix">send</i>
+                  <input id="icon_prefix-3" type="email" class="validate" required>
+                  <label for="icon_prefix-3">Email</label>
+                  <span class="helper-text" data-error="Enter valid email"></span>
+                </div>
+
+                <div id="new-username" class="input-field col l12 s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix-4" type="text" class="validate" required pattern=".{3,}" title="3 characters minimum">
+                  <label for="icon_prefix-4">New Username</label>
+                  <span class="helper-text" data-error="Min. 3 character">
+                </div>
+
+                <div id="new-password" class="input-field col l6 s12">
+                  <i class="material-icons prefix">vpn_key</i>
+                  <input id="icon_prefix-5" type="password" class="validate" required>
+                  <label for="icon_prefix-5">Password</label>
+                </div>
+
+                <div id="new-password-confirm" class="input-field col l6 s12">
+                  <i class="material-icons prefix">vpn_key</i>
+                  <input id="icon_prefix-6" type="password" class="" required onkeyup='check()'>
+                  <label for="icon_prefix-6">Confirm Password</label>
+                  <span id="password-confirm" class="helper-text" data-error="Password not match" data-success="Password Match"></span>
+                </div>
+
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a class="waves-effect btn-flat modal-link modal-close">Cancel</a>
+          <a id="create-user" class="waves-effect btn-flat modal-link">Create User</a>
+        </div>
+      </div>
+      <!-- End Nav -->
+
+      <div class="row container payment-field">
+        <form class="col s12">
+          <div class="row">
+
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password1" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <script src="https://js.stripe.com/v3/"></script>
+
+          <form action="/charge" method="post" id="payment-form">
+            <div class="form-row">
+              <label for="card-element">
+                Credit or debit card
+              </label>
+              <div id="card-element">
+                <!-- A Stripe Element will be inserted here. -->
+              </div>
+
+              <!-- Used to display form errors. -->
+              <div id="card-errors" role="alert"></div>
+            </div>
+
+            <a class="waves-effect waves-light btn-small">Cancel</a>
+            <a class="waves-effect waves-light btn-small" type="submit" name="action">Submit Payment</a>
+          </form>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript" src="javascript/main.js"></script>
+  <script type="text/javascript" src="javascript/payment.js"></script>
+  <!-- Google OAuth Script -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- Axios Script -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
