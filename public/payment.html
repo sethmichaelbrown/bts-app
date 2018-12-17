@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="style/fonts.css">
   <link rel="stylesheet" href="style/index.css">
   <link rel="stylesheet" href="style/calendar.css">
+  <link rel="stylesheet" href="style/payment.css">
   <!--[if lt IE 9]>
     <script src="[PATH]/html5shiv.js"></script>
     <![endif]-->
@@ -27,7 +28,6 @@
 <body>
   <div class="content-wrapper">
     <div class="layer">
-
 
       <!-- Nav -->
       <div class="navbar-fixed">
@@ -159,8 +159,8 @@
                 <hr>
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
-                </script>
+                <!-- <script async defer src="https://apis.google.com/js/api.js" onload="this.onload=function(){};handleClientLoad()" onreadystatechange="if (this.readyState === 'complete') this.onload()">
+                </script> -->
               </div>
 
             </div>
@@ -253,89 +253,73 @@
       </div>
       <!-- End Nav -->
 
-      <div class="row container center">
-        <div class="col s12 l12 main-header center">
-          <h1>BUSTOSHOW.ORG</h1>
-        </div>
-        <div class="ride-btn-container">
-          <a class="ride-btn waves-effect waves-light btn-large">
-            <h3 class="btn-text">Ride With Us</h3>
-          </a>
-        </div>
-      </div>
+      <div class="row container payment-field">
+        <form class="col s12">
+          <div class="row">
 
-      <div class="row center">
-        <div class="col s12 l12 center">
-          <!-- Chevron -->
-          <div class="chevron">
-            <svg viewBox="0 0 68 33" class="chevron-down">
-              <path d="M.58 3.414l27.432 27.433c2.715 2.715 7.167 2.787 9.964.164L67.356 3.46 64.62.54 35.24 28.093c-1.222 1.146-3.212 1.114-4.4-.075L3.408.586.579 3.414z"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <!-- End Content Wrapper -->
-
-
-
-  <div class="calendar-section" id="calendar">
-    <div class="row container cal-body-section">
-      <div class="col l12 s12 make-top">
-        <h2 class="event-header">Events</h2>
-      </div>
-      <div class="row row-big">
-        <div class="col s12 m12 l12">
-          <div class="row sort-by">
-            <div class="col l2 s2 row-header valign-wrapper" id="date">
-              <span class="title">Date</span>
+            <div class="input-field col s6">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
             </div>
-            <div class="col l2 s2 row-header valign-wrapper" id="dayOfWeek">
-              <span class="title">Day</span>
-            </div>
-            <div class="col l3 s3 row-header valign-wrapper" id="headliner">
-              <span class="title">Headliner</span>
-            </div>
-            <div class="col l3 s3 row-header valign-wrapper" id="venue">
-              <span class="title">Venue</span>
-            </div>
-            <div class="col l2 s2 row-header valign-wrapper">
-              <span class="title">Reserve</span>
+
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
             </div>
           </div>
-        </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password1" type="password" class="validate">
+              <label for="password">Password</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+
+          <script src="https://js.stripe.com/v3/"></script>
+
+          <form action="/charge" method="post" id="payment-form">
+            <div class="form-row">
+              <label for="card-element">
+                Credit or debit card
+              </label>
+              <div id="card-element">
+                <!-- A Stripe Element will be inserted here. -->
+              </div>
+
+              <!-- Used to display form errors. -->
+              <div id="card-errors" role="alert"></div>
+            </div>
+
+            <a class="waves-effect waves-light btn-small">Cancel</a>
+            <a class="waves-effect waves-light btn-small" type="submit" name="action">Submit Payment</a>
+          </form>
+
+        </form>
       </div>
 
-      <div id="events-row">
-
-      </div>
-
-    </div>
-  </div>
-
-  <div class="modal3">
-    <div id="modal3" class="modal modal-fixed-footer">
-      <div class="modal-content" id='modal3-content'>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-close waves-effect btn-flat">Cancel</a>
-        <a href="#!" class="waves-effect btn-flat book-btn">Book Seat</a>
-      </div>
     </div>
   </div>
 
 
   <!-- Compiled and minified JavaScript -->
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script type="text/javascript" src="javascript/index.js"></script>
-  <script type="text/javascript" src="javascript/password.js"></script>
-  <script type="text/javascript" src="javascript/calendar.js"></script>
+  <script type="text/javascript" src="javascript/main.js"></script>
+  <script type="text/javascript" src="javascript/payment.js"></script>
   <!-- Google OAuth Script -->
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <!-- Axios Script -->

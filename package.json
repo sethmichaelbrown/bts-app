@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sethmichaelbrown/bts-app#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "validator": "^10.9.0"
   }
 }
